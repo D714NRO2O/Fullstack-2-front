@@ -94,10 +94,10 @@ onMounted(() => {
 
     <v-data-table
       :headers="[
-        { text: 'ID', value: 'id' },
-        { text: 'Nombre', value: 'name' },
-        { text: 'Descripción', value: 'description' },
-        { text: 'Acciones', value: 'acciones', sortable: false }
+        { title: 'ID', value: 'id' },
+        { title: 'Nombre', value: 'name' },
+        { title: 'Descripción', value: 'description' },
+        { title: 'Acciones', value: 'acciones', sortable: false }
       ]"
       :items="tipos"
       class="rounded-lg elevation-1"

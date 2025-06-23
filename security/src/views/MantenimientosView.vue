@@ -140,13 +140,13 @@ onMounted(async () => {
 
     <v-data-table
       :headers="[
-        { text: 'ID', value: 'id' },
-        { text: 'Equipo', value: 'equipment.location' },
-        { text: 'Tipo', value: 'type' },
-        { text: 'Fecha', value: 'date' },
-        { text: 'Responsable', value: 'performedBy' },
-        { text: 'Observaciones', value: 'observations' },
-        { text: 'Acciones', value: 'acciones', sortable: false }
+        { title: 'ID', value: 'id' },
+        { title: 'Equipo', value: 'equipment.location' },
+        { title: 'Tipo', value: 'type' },
+        { title: 'Fecha', value: 'date' },
+        { title: 'Responsable', value: 'performedBy' },
+        { title: 'Observaciones', value: 'observations' },
+        { title: 'Acciones', value: 'acciones', sortable: false }
       ]"
       :items="mantenimientos"
       :items-per-page="rowsPerPage"

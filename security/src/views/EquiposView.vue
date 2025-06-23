@@ -106,12 +106,12 @@ onMounted(async () => {
     <!-- Tabla -->
     <v-data-table class="rounded-lg"
       :headers="[
-        { text: 'ID', value: 'id' },
-        { text: 'Ubicación', value: 'location' },
-        { text: 'Tipo de equipo', value: 'type.name' },
-        { text: 'Estado', value: 'status' },
-        { text: 'Descripción', value: 'description' },
-        { text: 'Acciones', value: 'acciones', sortable: false }
+        { title: 'ID', value: 'id' },
+        { title: 'Ubicación', value: 'location' },
+        { title: 'Tipo de equipo', value: 'type.name' },
+        { title: 'Estado', value: 'status' },
+        { title: 'Descripción', value: 'description' },
+        { title: 'Acciones', value: 'acciones', sortable: false }
       ]"
       :items="equipos"
       :items-per-page="rowsPerPage"
