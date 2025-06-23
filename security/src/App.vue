@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">Equipos</RouterLink>
+        <RouterLink to="/tipos">Tipos de Equipos</RouterLink>
+        <RouterLink to="/mantenimientos">Mantenimientos</RouterLink>
       </nav>
     </div>
   </header>
@@ -22,6 +22,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <style scoped>
 header {
+  --color-text: #1e88e5;
+  --color-border: #90caf9;
+  --color-text-default: #555555
+  --section-gap: 2rem;
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -47,6 +51,7 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
+  color: var(--color-text-default);
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
@@ -81,5 +86,10 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
+
+  nav a:hover {
+  color: var(--color-text);
+}
+
 }
 </style>
